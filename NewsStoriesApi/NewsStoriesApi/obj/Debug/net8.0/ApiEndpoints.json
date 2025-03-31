@@ -1,0 +1,18 @@
+[
+  {
+    "ContainingType": "NewsStoriesApi.Controllers.TopStoriesController",
+    "Method": "Get",
+    "RelativePath": "api/TopStories",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "apiKey",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

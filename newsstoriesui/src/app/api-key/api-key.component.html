@@ -1,0 +1,18 @@
+<div class="container">
+    <h2>Enter Your API Key</h2>
+    <form (ngSubmit)="submitApiKey()" #apiKeyForm="ngForm">
+      <label for="apiKey">API Key:</label>
+      <input
+        type="text"
+        id="apiKey"
+        name="apiKey"
+        required
+        [(ngModel)]="apiKey"
+        #apiKeyInput="ngModel">
+      <div class="error" *ngIf="apiKeyInput.invalid && apiKeyInput.touched">
+        API Key is required.
+      </div>
+      <button type="submit" [disabled]="apiKeyForm.invalid">Submit</button>
+    </form>
+  </div>
+  
